@@ -20,5 +20,7 @@ namespace TODO_Spring2017.Models
         }
 
         public System.Data.Entity.DbSet<TODO_Spring2017.Models.List> Lists { get; set; }
+
+        public System.Data.Entity.DbSet<TODO_Spring2017.Models.Item> Items { get; set; }
     }
 }
