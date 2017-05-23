@@ -39,6 +39,7 @@
             @Html.DisplayFor(modelItem => item.IsDone)
         </td>
         <td>
+            <a href="@Url.Action("ToggleDone", new {id = item.ItemID})">Toggle Done</a>
             @Html.DisplayFor(modelItem => item.ItemName)
         </td>
         <td>
