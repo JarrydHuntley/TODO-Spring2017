@@ -37,8 +37,14 @@
 
         <td>
             <a href="@Url.Action("ToggleDone", new {id = item.ItemID})">
-                <span class="glyphicon glyphicon-check"></span>
-
+                @if (item.IsDone)
+                {
+                    <span class="glyphicon glyphicon-check"></span>
+                }
+                else
+                {
+                    <span class="glyphicon glyphicon-unchecked"></span>
+                }
             </a>
         </td>
         <td>
