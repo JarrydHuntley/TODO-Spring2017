@@ -36,8 +36,10 @@
         </td>
 
         <td>
-            <a href="@Url.Action("ToggleDone", new {id = item.ItemID})">Toggle Done</a>
-            @Html.DisplayFor(modelItem => item.IsDone)
+            <a href="@Url.Action("ToggleDone", new {id = item.ItemID})">
+                <span class="glyphicon glyphicon-check"></span>
+
+            </a>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ItemName)

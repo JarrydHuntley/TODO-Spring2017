@@ -21,7 +21,7 @@ namespace TODO_Spring2017.Controllers
             return View(items.ToList());
         }
          
-        // GET: Items/Edit/5
+        // GET: Items/ToggleDone/5
         public ActionResult ToggleDone(int? id)
         {
             if (id == null)
